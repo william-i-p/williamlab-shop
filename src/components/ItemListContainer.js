@@ -8,13 +8,13 @@ export const ItemListContainer = () => {
     {
         Products.map( (no) =>(
             <div className='product-card'>
-            <div className='badge'>{no.nuevo}</div>
+            <div className='badge'>{no.nuevo ? 'Nuevo': ''}</div>
             <div className='product-tumb'>
                 <img src="../imagenes/schecoperez.jpg" alt=""/>
             </div>
             <div className='product-details'>
                 <p className='product-category'>{no.categoria}</p>
-                <h4><a href='https://facebook.com'>{no.nombre}</a></h4>
+                <h4><a href='https://facebook.com' key={no.id}>{no.nombre}</a></h4>
                 <p>{no.descripcion}</p>
                 <div className='product-bottom-details'>
                     <div className='product-price'>

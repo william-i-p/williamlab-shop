@@ -8,7 +8,6 @@ import { NavBar } from './components/NavBar';
 const App = () => {
 
   return (
-
     <div className="App">
         <NavBar />
         <div className='container'>
