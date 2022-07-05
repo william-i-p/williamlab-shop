@@ -1,30 +1,37 @@
-import React from 'react'
-import  { Products }  from './products/Products'
+import React from 'react';
+import Products from '../products/Products';
 
+export const ItemListContainer = () => {
 
-export const ItemListContainer = ({Products}) => {
   return (
     <>
-        <div className='product-card'>
-            <div className='badge'>{nuevo}</div>
+    {
+        Products.map( (no) =>(
+            <div className='product-card'>
+            <div className='badge'>{no.nuevo}</div>
             <div className='product-tumb'>
-                <img src='' alt=''/>
+                <img src="../imagenes/schecoperez.jpg" alt=""/>
             </div>
             <div className='product-details'>
-                <spam className='product-category'>{categoria}</spam>
-                <h4><a href=''>{nombre}</a></h4>
-                <p>{descripcion}</p>
+                <p className='product-category'>{no.categoria}</p>
+                <h4><a href='https://facebook.com'>{no.nombre}</a></h4>
+                <p>{no.descripcion}</p>
                 <div className='product-bottom-details'>
                     <div className='product-price'>
-                        <h3>{precio}</h3>
+                        <h3>${no.precio}</h3>
                     </div>
                     <div className='product-links'>
-                        <a href='#'><i className='fa fa-heart'></i></a>
-                        <a href='#'><i className='fa fa-shopping-cart'></i></a>
+                        <a href='https://facebook.com'><i className='bi bi-cart-plus-fill con-success-lg'></i></a>
+                        <a href='https://facebook.com'><i className='bi bi-heart-fill con-like'></i></a> 
                     </div>
                 </div>
             </div>
         </div>
+
+        ))
+    }
+        
     </>
   )
 }
+

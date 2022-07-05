@@ -21,7 +21,7 @@ export const NavBar = () => {
       </form>
 
       <div className="text-end">
-        <button type="button" className="btn btn-outline-light me-2"><i class="bi bi-basket2 text-primary"></i></button>
+        <button type="button" className="btn btn-outline-light me-2"><i className="bi bi-basket2 text-primary"></i></button>
         <button type="button" className="btn btn-warning">Log-in</button>
       </div>
     </div>

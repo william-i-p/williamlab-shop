@@ -5,11 +5,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .container{
   margin-top: 50px;
   margin-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .menu-fixed {
@@ -20,11 +23,13 @@ body {
 }
 
 .product-card {
+ 
   width: 380px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 50px auto;
   background: #fafafa;
+
 }
 
 .badge {
@@ -44,7 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 300%;
-  padding: 50px;
+  padding: 10px;
   background: #f0f0f0;
 }
 
@@ -109,32 +114,39 @@ body {
 
 .product-links {
   text-align: right;
+  
+}
+.con-success{
+  color:rgb(17, 89, 137);
+}
+.con-like {
+  color: #ff1919;
 }
 
 .product-links a {
   display: inline-block;
-  margin-left: 5px;
-  color: #e1e1e1;
+  margin-left: 10px;
+  color: #1f1a1a;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .product-links a:hover {
-  color: red
+  color: rgb(255, 0, 0)
 }
 
-button {
-  
-  background: #fff;
-  color: #000;
-  font-size: 16px;
-  border-radius: 15px;
-  border-width: 1px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.button-bottom {
-  display: flex;
+
+.card {
+  align-content: center;
   align-items: center;
+  background-color: rgb(165, 39, 39);
+  border-radius: 10px;
+
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }

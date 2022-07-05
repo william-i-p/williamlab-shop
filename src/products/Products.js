@@ -1,9 +1,9 @@
 
-export const Products = [
+const Products = [
     {
         id: 1,
         nombre: 'Playera Monaco',
-        precio: 300,
+        precio: 3030,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'playera',
         nuevo: true,
@@ -97,3 +97,5 @@ export const Products = [
         nuevo: false,
     }
 ]
+
+export default Products;
