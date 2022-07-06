@@ -1,4 +1,5 @@
 import './App.css';
+import { AddToCart } from './components/AddToCart';
 import { ItemContainer } from './components/ItemContainer';
 //import Formulario from './components/Formulario';
 
@@ -14,6 +15,7 @@ const App = () => {
           <h1>BIENVENIDO A MI TIENDA</h1>
           <div>
             <ItemContainer />
+            <AddToCart />
           </div>
         </div>
     </div>
