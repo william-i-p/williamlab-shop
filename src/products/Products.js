@@ -6,6 +6,7 @@ const Products = [
         precio: 3030,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'playera',
+        img: '../imagenes/pmonaco.png',
         nuevo: true,
     },
     {   
@@ -14,6 +15,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'playera',
+        img: '../imagenes/pmexico.png',
         nuevo: true,
     },
     {
@@ -22,6 +24,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'playera',
+        img: '../imagenes/playerasilver.png',
         nuevo: false,
     },
     {
@@ -30,6 +33,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'tenis',
+        img: '../imagenes/tenisrb.jpg',
         nuevo: true,
     },
     {
@@ -38,14 +42,16 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'tenis',
+        img: '../imagenes/tenismb.jpg',
         nuevo: false,
     },
     {
         id: 6,
-        nombre: 'Pantalon Estampado Blanco',
+        nombre: 'Sueter Red Bull',
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'playera',
+        img: '../imagenes/sueterrb.png',
         nuevo: false,
     },
     {
@@ -54,6 +60,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'coleccionables',
+        img: '../imagenes/figuracsp.png',
         nuevo: true,
     },
     {
@@ -62,6 +69,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'coleccionables',
+        img: '../imagenes/figuraccanada.png',
         nuevo: false,
     },
     {
@@ -70,6 +78,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'coleccionables',
+        img: '../imagenes/figuracmonaco.png',
         nuevo: true,
     },
     {
@@ -78,6 +87,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'coleccionables',
+        img: '../imagenes/figuracallseason.png', //
         nuevo: true,
     },
     {
@@ -86,6 +96,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'coleccionables',
+        img: '../imagenes/figuracmiami.png',
         nuevo: true,
     },
     {
@@ -94,6 +105,7 @@ const Products = [
         precio: 300,
         descripcion: 'Playera tipo polo color negra con diseño del gran premio de Monaco',
         categoria: 'tenis',
+        img: '../imagenes/gorrallseason.png',
         nuevo: false,
     }
 ]

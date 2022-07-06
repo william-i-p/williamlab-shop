@@ -1,5 +1,6 @@
 import React from 'react';
 import Products from '../products/Products';
+import { AddToCart } from './AddToCart';
 
 export const ItemListContainer = () => {
 
@@ -7,10 +8,11 @@ export const ItemListContainer = () => {
     <>
     {
         Products.map( (no) =>(
+            <li>
             <div className='product-card'>
             <div className='badge'>{no.nuevo ? 'Nuevo': ''}</div>
             <div className='product-tumb'>
-                <img src="../imagenes/schecoperez.jpg" alt=""/>
+                <img src={no.img} alt="" width={360} height={360}/>
             </div>
             <div className='product-details'>
                 <p className='product-category'>{no.categoria}</p>
@@ -20,18 +22,18 @@ export const ItemListContainer = () => {
                     <div className='product-price'>
                         <h3>${no.precio}</h3>
                     </div>
+                    <div>
+                    <AddToCart />
+                    </div>
                     <div className='product-links'>
-                        <a href='https://facebook.com'><i className='bi bi-cart-plus-fill con-success-lg'></i></a>
                         <a href='https://facebook.com'><i className='bi bi-heart-fill con-like'></i></a> 
                     </div>
                 </div>
             </div>
-        </div>
-
+            </div>
+            </li>
         ))
     }
-        
     </>
   )
 }
-
