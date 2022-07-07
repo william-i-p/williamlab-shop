@@ -16,14 +16,14 @@ export const ItemListContainer = () => {
             </div>
             <div className='product-details'>
                 <p className='product-category'>{no.categoria}</p>
-                <h4><a href='https://facebook.com' key={no.id}>{no.nombre}</a></h4>
-                <p>{no.descripcion}</p>
+                <h4><a href='https://facebook.com' key={no.id}>{no.nombre.slice(0,38)}</a></h4>
+                <p>{no.descripcion.slice(0,90)}</p>
                 <div className='product-bottom-details'>
                     <div className='product-price'>
                         <h3>${no.precio}</h3>
                     </div>
                     <div>
-                    <AddToCart />
+                    <AddToCart stock={no.stock} />
                     </div>
                     <div className='product-links'>
                         <a href='https://facebook.com'><i className='bi bi-heart-fill con-like'></i></a> 

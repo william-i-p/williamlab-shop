@@ -17,18 +17,27 @@ const style = {
     p: 4,
   };
 
-export const AddToCart = () => {
+export const AddToCart = ({stock}) => {
+
+  var stocking = parseInt(stock)
 
     const [ agregar, setAgregar ] = useState(0);
 
     const reset = 0
     
     const incrementar = () => {
-      setAgregar( parseInt(agregar +1) )
+
+      if (agregar < stocking){
+        setAgregar( parseInt(agregar + 1))
+        
+        console.log(stocking)
+        console.log(agregar)
+
+      }
     }
 
     const decrementar = () =>{
-        if(agregar > 1){
+        if(agregar >= 1){
           setAgregar( parseInt(agregar -1) )
         }
     }
@@ -59,7 +68,7 @@ export const AddToCart = () => {
             <Button variant="outlined" onClick={decrementar} >-</Button>
             </div>
             <div className='col-4'>
-            <h3 className='modaltext'>{agregar}</h3>
+            <h3 className='modaltext'>{agregar === stocking ? `Ya no hay más de ${stocking} productos` : agregar}</h3>
             </div>
             <div className='col-4'>
             <Button variant="outlined" onClick={incrementar} >+</Button>
