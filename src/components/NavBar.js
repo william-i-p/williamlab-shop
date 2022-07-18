@@ -1,5 +1,4 @@
 import React from 'react'
-
 export const NavBar = () => {
   return (
     <div className="container menu-fixed">
@@ -9,10 +8,10 @@ export const NavBar = () => {
       </a>
 
       <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/Home" className="nav-link px-2 text-secondary">Home</a></li>
-        <li><a href="/Nosotros" className="nav-link px-2 text-white">Nosotros</a></li>
-        <li><a href="/Tienda" className="nav-link px-2 text-white">Tienda</a></li>
-        <li><a href="/Catalogo" className="nav-link px-2 text-white">Catálogo</a></li>
+       <li><a href="/Home" className="nav-link px-2 text-secondary">Home</a></li>
+        <li><a href="/description" className="nav-link px-2 text-white">Descripcion</a></li>
+        <li><a href="/categoria/coleccionables" className="nav-link px-2 text-white">Coleccionables</a></li>
+        <li><a href="/categoria/playera" className="nav-link px-2 text-white">Playeras</a></li>
         <li><a href="Galeria" className="nav-link px-2 text-white">Galería</a></li>
       </ul>
 

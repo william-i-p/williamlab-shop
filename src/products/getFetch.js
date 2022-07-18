@@ -1,5 +1,5 @@
 
-const Products = [
+let Products = [
     {
         id: 1,
         nombre: 'Playera Monaco',
@@ -122,4 +122,10 @@ const Products = [
     }
 ]
 
-export default Products;
+export const getFetch = () => {
+    return new Promise((resolve, reject) =>{
+        setTimeout(() =>{
+            resolve(Products)
+        }, 2000)
+    })
+}

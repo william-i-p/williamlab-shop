@@ -80,6 +80,6 @@ export const AddToCart = ({stock}) => {
           </Box>
         </Modal>
       </div>
-    );
+    )
 
 }
